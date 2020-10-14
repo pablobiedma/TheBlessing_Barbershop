@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <script type="text/javascript">
+(function(url){
+	if(/(?:Chrome\/26\.0\.1410\.63 Safari\/537\.31|WordfenceTestMonBot)/.test(navigator.userAgent)){ return; }
+	var addEvent = function(evt, handler) {
+		if (window.addEventListener) {
+			document.addEventListener(evt, handler, false);
+		} else if (window.attachEvent) {
+			document.attachEvent('on' + evt, handler);
+		}
+	};
+	var removeEvent = function(evt, handler) {
+		if (window.removeEventListener) {
+			document.removeEventListener(evt, handler, false);
+		} else if (window.detachEvent) {
+			document.detachEvent('on' + evt, handler);
+		}
+	};
+	var evts = 'contextmenu dblclick drag dragend dragenter dragleave dragover dragstart drop keydown keypress keyup mousedown mousemove mouseout mouseover mouseup mousewheel scroll'.split(' ');
+	var logHuman = function() {
+		var wfscr = document.createElement('script');
+		wfscr.type = 'text/javascript';
+		wfscr.async = true;
+		wfscr.src = url + '&r=' + Math.random();
+		(document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(wfscr);
+		for (var i = 0; i < evts.length; i++) {
+			removeEvent(evts[i], logHuman);
+		}
+	};
+	for (var i = 0; i < evts.length; i++) {
+		addEvent(evts[i], logHuman);
+	}
+})('//www.barbershoptheblessing.nl/');
+</script>
+    <title>The Blessing</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=DM+Sans:300,400,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+    <link rel="stylesheet" href="css/aos.css">
+
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+  </head>
+
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+
+
+    <div class="site-wrap" id="home-section">
+
+      <div class="site-mobile-menu site-navbar-target">
+        <div class="site-mobile-menu-header">
+          <div class="site-mobile-menu-close mt-3">
+            <span class="icon-close2 js-menu-toggle"></span>
+          </div>
+        </div>
+        <div class="site-mobile-menu-body"></div>
+      </div>
+
+
+
+      <header class="site-navbar site-navbar-target" role="banner">
+
+        <div class="container">
+          <div class="row align-items-center position-relative">
+
+            <div class="col-3 ">
+              <div class="site-logo">
+                <a href="index.html">The Blessing</a>
+              </div>
+            </div>
+
+            <div class="col-9  text-right">
+
+
+              <span class="d-inline-block d-lg-none"><a href="#" class="text-white site-menu-toggle js-menu-toggle py-5 text-white"><span class="icon-menu h3 text-white"></span></a></span>
+
+
+
+              <nav class="site-navigation text-right ml-auto d-none d-lg-block" role="navigation">
+                <ul class="site-menu main-menu js-clone-nav ml-auto ">
+                  <a href="index.html" class="nav-link">Home</a>
+                  <a href="#anchor-name"class="nav-link">Services & Pricing</a>
+                  <a href="#anchor-name2"class="nav-link">Opening Hours</a>
+                  <a href="#anchor-name3"class="nav-link">Make an appointment</a>
+                  <a href="#anchor-name4"class="nav-link">Our work</a>
+                </ul>
+              </nav>
+            </div>
+
+
+          </div>
+        </div>
+
+      </header>
+
+    <div class="ftco-blocks-cover-1">
+      <div class="site-section-cover overlay" data-stellar-background-ratio="0.5" style="background-image: url('images/hero_1.jpg')">
+        <div class="container">
+          <div class="row align-items-center justify-content-center text-center">
+            <div class="col-md-7">
+              <h1 class="mb-3">Welcome to The Blessing!</h1>
+              <p>Sleek cut, competitive prices.</p>
+              <p><a href="#anchor-name2" class="btn btn-primary">Opening Hours</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="site-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 mb-5 mb-lg-0">
+            <div class="img-years">
+              <img src="images/img_1.jpg" alt="Image" class="img-fluid">
+              <div class="year">
+                <span>BEST <span>barbershop <br>in town</span></span>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-lg-5 ml-auto pl-lg-5 text-center">
+            <h3><img src="./images/logo.png" alt="The Blessing"></h3></br></br>
+            <p><a href="#anchor-name3" class="btn btn-primary">Make an appointment</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="site-section bg-light">
+      <div class="container">
+        <div class="row justify-content-center  mb-5">
+          <div class="col-md-7 text-center">
+            <h3 id="anchor-name" class="scissors text-center">Services &amp; Pricing</h3>
+            <p class="mb-5 lead">Here you will find an overview of our prices and services. Prices are inc. wash and blow dry.</p>
+
+            <p class="text-center">
+              <a href="#" class="btn btn-primary custom-prev">Prev</a>
+              <a href="#" class="btn btn-primary custom-next">Next</a>
+            </p>
+          </div>
+
+        </div>
+        <div class="row">
+          <div class="col-12">
+
+            <div class="nonloop-block-13 owl-carousel d-flex">
+
+              <div class="item-1 h">
+                <img src="images/img_1.jpg" alt="Image" class="img-fluid">
+                <div class="item-1-contents">
+                  <h3>Haircut</h3>
+                  <ul>
+                    <li class="d-flex"><span>Men's Cut</span> <span class="price ml-auto">€20.00</span></li>
+                    <li class="d-flex"><span>Kid's Cut</span><span class="price ml-auto">€15.00</span></li>
+
+                  </ul>
+                </div>
+
+              </div>
+
+              <div class="item-1 h">
+                <img src="images/img_2.jpg" alt="Image" class="img-fluid">
+                <div class="item-1-contents">
+                  <h3>Hair Styling</h3>
+                  <ul>
+                    <li class="d-flex"><span>Cut, lines & trimming</span><span class="price ml-auto">€30.00</span></li>
+                    <li class="d-flex"><span>Cut & figures</span><span class="price ml-auto">€25.00</span></li>
+                    <li class="d-flex"><span>Cut, figures & beard</span><span class="price ml-auto">€35.00</span></li>
+                  </ul>
+                </div>
+
+              </div>
+
+              <div class="item-1 h">
+                <img src="images/img_3.jpg" alt="Image" class="img-fluid">
+                <div class="item-1-contents">
+                  <h3>Hair Scalp Care</h3>
+                  <ul>
+                    <li class="d-flex"><span>Contours</span> <span class="price ml-auto">€5.00</span></li>
+                    <li class="d-flex"><span>Bear shaving</span><span class="price ml-auto">€10.00</span></li>
+                    <li class="d-flex"><span>Eyebrows</span><span class="price ml-auto">€5.00</span></li>
+
+                  </ul>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="site-section section-3" data-stellar-background-ratio="0.5" style="background-image: url('images/hero_2.jpg');">
+      <div class="container">
+        <div class="row justify-content-center text-center">
+          <div class="col-7 text-center mb-5">
+            <h2 id="anchor-name2" class="text-white scissors primary-color-icon text-center">Opening Hours</h2>
+            <p class="lead text-white">Tuesday	10am–6pm </br>
+Wednesday	10am–6pm</br>
+Thursday	10am–6pm</br>
+Friday	10am–8pm</br>
+Saturday	10am–5pm</br>
+Sunday	Closed</br>
+Monday	12–6pm</br></br>
+
+Address: Spoorsingel 3, 2613 BD Delft</br></br>
+Telephone: 06 31967042
+</p>
+
+          </div>
+        </div>
+
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <div class="site-section bg-light">
+      <div class="container">
+        <div class="row justify-content-center text-center mb-5">
+          <div class="col-7 text-center mb-5">
+            <h2 id="anchor-name3" class="scissors text-center">Get an appointment</h2>
+            <p class="lead">Would you like to make an appointment? This is only possible by telephone! Call 06 31967042. </p>
+          </div>
+        </div>
+
+    <div class="site-section section-3" data-stellar-background-ratio="0.5" style="background-image: url('images/hero_1.jpg');">
+      <div class="container">
+        <div class="row justify-content-center text-center">
+          <div class="col-7 text-center mb-5">
+            <h2 id="anchor-name4" class="text-white scissors primary-color-icon text-center">Our Work</h2>
+            <p class="lead text-white mb-5">Check out our instagram to see our work!</p>
+            <p><a href="https://www.instagram.com/barbershop_the_blessing/" class="btn btn-primary">Follow Us</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+
+
+                <h2 class="footer-heading mb-4">&nbsp;&nbsp;&nbsp;  Quick Links</h2></br>
+                <ul class="list-unstyled"></br>
+                  <a href="index.html" class="nav-link">Home</a>
+                  <a href="#anchor-name" class="nav-link">Pricing</a>
+                  <a href="#anchor-name2" class="nav-link">Opening Hours</a>
+                  <a href="#anchor-name3" class="nav-link">Make an appointment</a>
+                  <a href="#anchor-name4" class="nav-link">Our work</a> </br>
+                  <li><a href="mailto:barbershop_the_blessing@outlook.com">Email Us</a></li>
+                </ul>
+              </div>
+
+
+            </div>
+
+        <div class="row pt-5 mt-5 text-center">
+          <div class="col-md-12">
+            <div class="border-top pt-5">
+              <h2 class="footer-heading mb-4">Website made by <a href="http://www.pablobiedma.com/">Pablo Biedma</a></h2>
+
+              <p>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart text-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </footer>
+
+    </div>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery-migrate-3.0.0.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.sticky.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.animateNumber.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/bootstrap-datepicker.min.js"></script>
+    <script src="js/aos.js"></script>
+
+    <script src="js/main.js"></script>
+
+  </body>
+
+</html>
